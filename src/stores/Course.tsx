@@ -1,4 +1,4 @@
-class Option
+class Course
 {
     title: string;
     info: string;
@@ -15,4 +15,4 @@ class Option
     }
 }
 
-export default Option
+export default Course

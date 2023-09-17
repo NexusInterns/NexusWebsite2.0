@@ -7,7 +7,7 @@
     --bgColor: #F5F5F0;
 }
 
-.option-card
+.course-card
 {
     background-color: var(--bgColor);
     border-radius: 15px;
@@ -24,26 +24,26 @@
     cursor: pointer;
 }
 
-.option-card:hover
+.course-card:hover
 {
     -webkit-box-shadow: var(--boxShadow1);
     -moz-box-shadow: var(--boxShadow1);
     box-shadow: var(--boxShadow1);
 }
 
-.option-card-image
+.course-card-image
 {
     border-radius: 15px;
     margin-bottom: 20px;
 }
 
-.option-card-information
+.course-card-information
 {
     margin: auto;
     width: 90%;
 }
 
-.option-card-read-more
+.course-card-read-more
 {
     margin: 0 20px;
     width: auto;

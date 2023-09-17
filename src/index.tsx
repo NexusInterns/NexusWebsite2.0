@@ -1,16 +1,16 @@
 import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
-import OptionCard from "./components/OptionCard";
+import CourseCard from "./components/CourseCard";
 
-import Option from './stores/Option';
+import Course from './stores/Course';
 
 export {
     ListGroup,
     Alert,
     Button,
-    OptionCard,
+    CourseCard,
 
 
-    Option
+    Course
 }
