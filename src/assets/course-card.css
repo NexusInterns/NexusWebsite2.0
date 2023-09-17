@@ -1,0 +1,54 @@
+@import './constants.css';
+
+:root
+{
+    --boxShadow0: 0 0 10px 1px var(--Shadow);
+    --boxShadow1: 0 0 21px 7px var(--Shadow);
+    --bgColor: #F5F5F0;
+}
+
+.course-card
+{
+    background-color: var(--bgColor);
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    padding: 10px 0px;
+    font-family: Helvetica, Avenir, Arial, sans-serif;
+
+    -webkit-box-shadow: var(--boxShadow0);
+    -moz-box-shadow: var(--boxShadow0);
+    box-shadow: var(--boxShadow0);
+    transition: box-shadow 0.2s;
+
+    cursor: pointer;
+}
+
+.course-card:hover
+{
+    -webkit-box-shadow: var(--boxShadow1);
+    -moz-box-shadow: var(--boxShadow1);
+    box-shadow: var(--boxShadow1);
+}
+
+.course-card-image
+{
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.course-card-information
+{
+    margin: auto;
+    width: 90%;
+}
+
+.course-card-read-more
+{
+    margin: 0 20px;
+    width: auto;
+    text-align: end;
+
+    font-size: 0.85em;
+    font-weight: bold;
+}
