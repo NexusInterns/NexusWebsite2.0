@@ -1,4 +1,6 @@
 // 'use client';
+import "../assets/course-card.css";
+
 interface Props
 {
     title: string;
