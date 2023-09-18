@@ -7,7 +7,7 @@ import Terms from "./Terms";
 import Policy from "./Policy";
 
 let pages = [Home, Bootcamps, Courses, About, FAQS, Terms, Policy];
-let navPages = pages.slice(0,3);
+let navPages = pages.slice(0,4);
 let footerPages = pages.slice(4);
 
 export {
