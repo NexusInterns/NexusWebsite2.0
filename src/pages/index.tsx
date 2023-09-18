@@ -12,6 +12,12 @@ let footerPages = pages.slice(4);
 
 export {
     Home,
+    Bootcamps,
+    Courses,
+    About,
+    FAQS,
+    Terms, 
+    Policy,
 
     pages, navPages, footerPages
 }

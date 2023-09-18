@@ -1,0 +1,15 @@
+@import './constants.css';
+
+
+nav
+{
+    width: 100vw;
+    outline: black solid 2px;
+    text-align: center;
+}
+
+.nav-item
+{
+    background-color: var(--Yellow);
+    padding: 10px;
+}

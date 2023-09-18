@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes as Switch, Link } from 'react-router-dom';
-import { navPages, Home } from '../pages/index.tsx';
+import * as Pages from '../pages/index.tsx';
+import "../assets/navBar.css";
 
 interface Props
 {
@@ -7,17 +8,18 @@ interface Props
 }
 
 
-const NavBar = ({defaultPage = Home} : Props) =>
+const NavBar = ({defaultPage = Pages.Home} : Props) =>
 {
-    let page = defaultPage == undefined ? Home : defaultPage;
+    let page = defaultPage == undefined ? Pages.Home : defaultPage;
 
     return(
         <>
         <Router>
-            {navPages.map((navPage) => <Link className={`nav-${navPage}`} to={`/${(navPage != Home ? navPage : "")}`} >{navPage.name}</Link>)}
+            <nav>
+                {Pages.navPages.map((navPage) => <Link key={navPage.name} className={`nav-item`} to={`/${(navPage != Pages.Home ? navPage.name : "")}`} >{navPage.name}</Link>)}
+            </nav>
             <Switch>
-                {/* {<Route path='/' Component={Home} />} */}
-                {<Route path={`/${(page.name != Home.name ? page.name : "")}`} Component={page}/>}
+                {<Route key={page.name} path={`/${(page.name != Pages.Home.name ? page.name : "")}`} Component={page}/>}
             </Switch>
         </Router>
         </>
