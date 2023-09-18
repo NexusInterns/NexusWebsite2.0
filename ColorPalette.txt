@@ -1,4 +1,4 @@
-Color Pallete 0:
+Color Palette 0:
 #FFFFFF : White
 #E5E5E5 : Grey
 #FCA311 : Yellow
