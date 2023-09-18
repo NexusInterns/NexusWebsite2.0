@@ -7,8 +7,8 @@ app.use(cors());
 
 const db = require('./models');
 
-const postRouter = require('./routes/Subscribers');
-app.use("/subscribers", postRouter);
+// const postRouter = require('./routes/Subscribers');
+// app.use("/subscribers", postRouter);
 
 const port = 5172;
 db.sequelize.sync().then(() => { app.listen(port, () => console.log(`Server running on port ${port}}`)) });

@@ -1,0 +1,48 @@
+@import './constants.css';
+
+
+nav
+{
+    width: 768px;
+    height: auto;
+    outline: black solid 2px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+
+    font-weight: bold;
+}
+
+.nav-item
+{
+    width: 120px;
+    height: 70px;
+    color: var(--Black);
+    background-color: var(--White);
+    padding: 10px;
+
+    transition: background-color 50ms ease-in-out;
+    text-decoration: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.nav-item:hover
+{
+    color: var(--White);
+    background-color: var(--DarkBlue);
+
+}
+
+@media screen and (min-width: 768px) {
+    nav
+    {
+        width: 100vw;
+    }
+}

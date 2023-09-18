@@ -1,24 +1,20 @@
-import * as Components from './index.tsx';
-// import axios from 'axios';
-// import { useEffect, useState } from "react";
+// import * as Components from './components/index.tsx';
+// import axios from 'axios'; 
+import { BrowserRouter as Router, Route, Routes as Switch } from 'react-router-dom';
+import NavBar from "./layouts/NavBar";
+import * as Pages from './pages/index.tsx';
+import "./assets/navBar.css";
 
 function App()
 {
-  let courses = [
-    new Components.Course("Cisco Certified Network Associate CCNA 200-301", "Cisco certification is the edge you need to jump-start your IT career", "FREE for Out-of-School Youth", 5),
-    new Components.Course("Windows Server Administration", "You will learn how to automate manual server administration tasks using powershell", "FREE for Out-of-School Youth", 1),
-    new Components.Course("Windows Server Administration", "You will learn how to automate manual server administration tasks using powershell", "FREE for Out-of-School Youth", 1),
-    new Components.Course("Windows Server Administration", "You will learn how to automate manual server administration tasks using powershell", "FREE for Out-of-School Youth", 1),
-    new Components.Course("Windows Server Administration", "You will learn how to automate manual server administration tasks using powershell", "FREE for Out-of-School Youth", 1),
-    new Components.Course("Windows Server Administration", "You will learn how to automate manual server administration tasks using powershell", "FREE for Out-of-School Youth", 1),
-    new Components.Course("Windows Server Administration", "You will learn how to automate manual server administration tasks using powershell", "FREE for Out-of-School Youth", 1),
-    new Components.Course("Windows Server Administration", "You will learn how to automate manual server administration tasks using powershell", "FREE for Out-of-School Youth", 1)
-  ];
-
   return (
     <>
-      {courses.map((course) => <Components.CourseCard title={course.title} info={course.info} fee={course.fee} duration={course.duration}/>)}
-      
+      <Router>
+          <NavBar />
+          <Switch>
+              {Pages.navPages.map((navPage) => <Route key={navPage.name} path={`/${(navPage.name != Pages.Home.name ? navPage.name : "")}`} Component={navPage}/>)}
+          </Switch>
+      </Router>
     </>
   );
 }
