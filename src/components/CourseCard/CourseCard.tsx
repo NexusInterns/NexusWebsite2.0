@@ -1,5 +1,5 @@
 // 'use client';
-import "../assets/course-card.css";
+import "./course-card.css";
 
 interface Props
 {
