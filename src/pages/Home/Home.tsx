@@ -5,13 +5,13 @@ const Home = () =>
 {
   return (
     <>
-    <div>
+    <div className='home-contents'>
       <EffectsContainer effects='hide'>
         <h1>This is a website</h1>
         <p>Heeyyy</p>
       </EffectsContainer> 
     </div>
-    <div>
+    <div className='home-contents'>
       <EffectsContainer effects='hide fromLeft'>
         <h2>Please me</h2>
         <p>
@@ -19,7 +19,7 @@ const Home = () =>
         </p>
       </EffectsContainer> 
     </div>
-    <div>
+    <div className='home-contents'>
       <EffectsContainer effects='fromLeft'>
         <h2>OOOOO</h2>
         <p>
