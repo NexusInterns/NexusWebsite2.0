@@ -14,10 +14,10 @@ const Courses = () =>
   ];
 
   return (
-    <>
+    <div className="courses-container">
       {courses.map((course) => <CourseCard key={course.courseID} title={course.title} courseID={course.courseID} info={course.info} fee={course.fee} duration={course.duration}/>)}
       
-    </>
+    </div>
   );
 }
 

@@ -1,9 +1,8 @@
 // import * as Components from './components/index.tsx';
 // import axios from 'axios'; 
 import { BrowserRouter as Router, Route, Routes as Switch } from 'react-router-dom';
-import NavBar from "./layouts/NavBar";
+import NavBar from "./layouts/NavBar/NavBar.tsx";
 import * as Pages from './pages/index.tsx';
-import "./assets/navBar.css";
 
 function App()
 {

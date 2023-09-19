@@ -1,0 +1,9 @@
+div
+{
+    color: inherit;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 110vh;
+    width: 100%;
+}
