@@ -1,6 +1,0 @@
-Color Palette 0:
-#FFFFFF : White
-#E5E5E5 : Grey
-#FCA311 : Yellow
-#14213D : Dark Blue
-#000000 : Black
