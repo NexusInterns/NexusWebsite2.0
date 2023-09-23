@@ -12,17 +12,17 @@ const ListGroup = ({ items, heading, onSelectItem }: Props) => {
 
   return (
     <>
-        <h1>{heading}</h1>
-        {items.length === 0 && <p>No item found</p>}
-        <ul className="list-group">
-            {items.map((item, idx) => (
-                <li className={`list-group-item ${selectedIdx === idx && "active"}`}
-                    key={item}
-                    onClick={() => {
-                        setSelectedIdx(idx); onSelectItem(item);
-                    }}>{item}</li>
-            ))}
-        </ul>
+      <h1>{heading}</h1>
+      {items.length === 0 && <p>No item found</p>}
+      <ul className="list-group">
+          {items.map((item, idx) => (
+              <li className={`list-group-item ${selectedIdx === idx && "active"}`}
+                  key={item}
+                  onClick={() => {
+                      setSelectedIdx(idx); onSelectItem(item);
+                  }}>{item}</li>
+          ))}
+      </ul>
     </>
   );
 }

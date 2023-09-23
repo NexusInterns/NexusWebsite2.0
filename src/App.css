@@ -10,7 +10,7 @@
     width: 99.99%;
     font-family: Helvetica, Avenir, Arial, sans-serif;
     background-color: var(--mainBgColor);
-    color: var(--White);
+    color: var(--Black);
 
     display: flex;
     flex-flow: row wrap;
@@ -33,4 +33,20 @@
     border-radius: 10px;
     border: 4px solid var(--mainBgColor);
     background: var(--White);
+}
+
+@media screen and (orientation: landscape) {
+    .no-landscape {
+        display: none;
+    }
+}
+  
+@media screen and (orientation: portrait) {
+    .no-portrait {
+        display: none;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }

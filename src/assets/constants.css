@@ -4,8 +4,10 @@
     --Grey : #E5E5E5;
     --Yellow : #FCA311;
     --DarkBlue : #202757;
-    --Black : #010101;
-    --Shadow: #232327;
+    --Black : #1c1c1c;
+    --Shadow: rgba(0, 0, 0, 0.25);
 
-    --mainBgColor: #131316;
+    --mainBgColor: var(--White);
+
+    --Filter-Grey: invert(88%) sepia(17%) saturate(5%) hue-rotate(319deg) brightness(90%) contrast(95%);
 }

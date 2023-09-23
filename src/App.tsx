@@ -11,7 +11,7 @@ function App()
       <Router>
           <NavBar />
           <Switch>
-              {Pages.navPages.map((navPage) => <Route key={navPage.name} path={`/${(navPage.name != Pages.Home.name ? navPage.name : "")}`} Component={navPage}/>)}
+              {Pages.orientationSettings.navPages.map((navPage) => <Route key={navPage.name} path={`/${(navPage.name != Pages.Home.name ? navPage.name : "")}`} Component={navPage}/>)}
           </Switch>
       </Router>
     </>
