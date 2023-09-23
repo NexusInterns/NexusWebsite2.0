@@ -1,33 +1,17 @@
-import EffectsContainer from '../../components/Effects/EffectsContainer';
+import { EffectsContainer, CoursePreview } from '../../components/index';
+import { coursesList } from '../../assets/index.ts';
 import './home.css';
 
 const Home = () =>
 {
   return (
-    <>
-    <div className='home-contents'>
-      <EffectsContainer effects='hide'>
-        <h1>This is a website</h1>
-        <p>Heeyyy</p>
-      </EffectsContainer> 
-    </div>
-    <div className='home-contents'>
-      <EffectsContainer effects='hide fromLeft'>
-        <h2>Please me</h2>
-        <p>
-          Today i don't feel like doing anything
-        </p>
-      </EffectsContainer> 
-    </div>
-    <div className='home-contents'>
+    <main>
+      <h2 className='main-title'>Home</h2>
+      {coursesList.map((course) => 
       <EffectsContainer effects='fromLeft'>
-        <h2>OOOOO</h2>
-        <p>
-          YOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-        </p>
-      </EffectsContainer> 
-    </div>
-    </>
+        <CoursePreview title={course.title} courseID={course.courseID}></CoursePreview>
+      </EffectsContainer>)}
+    </main>
   );
 }
 

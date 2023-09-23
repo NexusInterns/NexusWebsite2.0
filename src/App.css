@@ -8,6 +8,7 @@
 #root
 {
     width: 99.99%;
+    min-width: 380px;
     font-family: Helvetica, Avenir, Arial, sans-serif;
     background-color: var(--mainBgColor);
     color: var(--Black);
@@ -48,5 +49,17 @@
 
     ::-webkit-scrollbar {
         display: none;
+    }
+
+    main {
+        padding: 20px var(--side-margin) 80px;
+    }
+
+    .main-title {
+        font-weight: bold;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 }

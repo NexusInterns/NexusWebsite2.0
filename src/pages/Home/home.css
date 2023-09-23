@@ -1,9 +1,6 @@
-.home-contents
-{
-    color: inherit;
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 110vh;
-    width: 100%;
+@import '/src/assets/constants.css';
+
+
+@media screen and (orientation: portrait) {
+
 }
