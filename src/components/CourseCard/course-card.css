@@ -1,67 +1,59 @@
 @import '/src/assets/constants.css';
 
-:root
-{
-    --boxShadow0: 0 0 10px 1px var(--Shadow);
-    --boxShadow1: 0 0 21px 7px var(--Shadow);
-    --bgColor: #F5F5F0;
-}
-
-.courses-container
-{
-    text-align: center;
+.course-card-container {
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--Black);
     
-    padding: 50px 0px;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--White);
 
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    align-content: flex-start;
-    gap: 50px;
+    margin: 30px 0;
 }
 
-.course-card
-{
-    background-color: var(--bgColor);
-    border-radius: 15px;
-    text-align: center;
-    width: 350px;
-    padding: 10px 0px;
-
-    -webkit-box-shadow: var(--boxShadow0);
-    -moz-box-shadow: var(--boxShadow0);
-    box-shadow: var(--boxShadow0);
-    transition: box-shadow 0.2s;
-
-    cursor: pointer;
-}
-
-.course-card:hover
-{
-    -webkit-box-shadow: var(--boxShadow1);
-    -moz-box-shadow: var(--boxShadow1);
-    box-shadow: var(--boxShadow1);
-}
-
-.course-card-image
-{
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-.course-card-information
-{
-    margin: auto;
-    width: 90%;
-}
-
-.course-card-read-more
-{
-    margin: 0 20px;
-    width: auto;
-    text-align: end;
-
-    font-size: 0.85em;
+.course-card-title {
+    width: 100%;
+    font-style: normal;
     font-weight: bold;
+    line-height: normal;
+    margin: 0 0 20px 0;
+}
+
+.course-card-title-0, .course-card-title-2 {
+    font-size: 1.25em;
+}
+
+.course-card-title-1 {
+    font-size: 2em;
+}
+
+.course-card-text {
+    font-size: 0.85em;
+}
+
+.course-card-info {
+    width: 80%;
+}
+
+.course-card-fee, .course-card-duration {
+    width: 60%;
+    font-weight: bold;
+}
+
+.course-card-btn {
+    background-color: var(--White);
+    width: max-content;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 2px 15px;
+    color: var(--Black);
+}
+
+.course-card-human {
+    display: block;
+    position: absolute;
+    right: 30px;
+    bottom: 270px;
+    width: 250px;
 }

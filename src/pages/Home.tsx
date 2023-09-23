@@ -1,6 +1,5 @@
-import { EffectsContainer, CoursePreview } from '../../components/index';
-import { coursesList } from '../../assets/index.ts';
-import './home.css';
+import { EffectsContainer, CoursePreview } from '../components/index';
+import { coursesList } from '../assets/index.ts';
 
 const Home = () =>
 {
