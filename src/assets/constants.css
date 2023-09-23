@@ -10,5 +10,4 @@
     --mainBgColor: var(--White);
 
     --Filter-Grey: invert(88%) sepia(17%) saturate(5%) hue-rotate(319deg) brightness(90%) contrast(95%);
-
 }
