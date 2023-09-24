@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import * as Pages from "../../pages/index";
 import "./navBar.css";
 import { useLocation } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
 
 var scrollPercent: number = 0;
 const SetScrollBar = () => {
@@ -16,7 +16,7 @@ const SetScrollBar = () => {
 
 const NavBar = () => {
   const [scrollTop, setScrollTop] = useState(0);
-  const scrollReset = () => {window.scrollTo(0,0); setScrollTop(0);};
+  const scrollReset = () => {window.scrollTo(0,0); SetScrollBar();};
 
   useEffect(() => {
     const handleScroll = (event: any) => {
@@ -25,22 +25,28 @@ const NavBar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("click", SetScrollBar);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("click", SetScrollBar);
     };
   }, []);
   
   const location = useLocation();
   const pathName = location.pathname === "/" ? "Home" : location.pathname.slice(1);
 
+  const navigate = useNavigate();
+
   return (
     <header>
-      <div className={`nav-title &{scrollTop >= 100 ? "shadow-header" : ""}`}>
+      <div className={`nav-title &{scrollTop >= 100 ? "shadow-header" : ""}`} onClick={() => {
+        if (scrollTop === 0) navigate("/");
+        else scrollReset();
+      }}>
         <img className="nav-icon" src="./src/assets/icons/logo.svg" alt="" />
         <h1 className="nav-name">NEXUSCLOUD IT SOLUTIONS</h1>
         <div id="nav-line-break"></div>
       </div>
-
       <nav className={`${scrollPercent === 100 ? "" : "shadow-header"}`}>
         {Pages.orientationSettings.navPages.map((navPage: () => JSX.Element) => (
           <Link

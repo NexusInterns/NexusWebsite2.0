@@ -5,6 +5,8 @@
     display: grid;
     place-items: center;
     align-content: center;
+    position: inherit;
+    z-index: inherit;
 }
 
 .hide

@@ -1,0 +1,43 @@
+@import '/src/assets/constants.css';
+
+@media screen and (orientation: portrait) {
+    .course-preview-container {
+        width: 100%;
+        border-radius: 20px;
+        background-color: var(--Black);
+        
+        padding: 20px;
+        text-decoration: none;
+    
+        margin: 30px 0;
+    }
+    
+    .course-preview-title {
+        color: var(--White);
+        width: 60%;
+    
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    
+        margin: 0 0 30px 0;
+    }
+    
+    .course-preview-btn {
+        background-color: var(--White);
+        width: max-content;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 2px 15px;
+        color: var(--Black);
+    }
+    
+    .course-preview-human {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+        width: 120px;
+    }
+}

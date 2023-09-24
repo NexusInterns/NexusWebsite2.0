@@ -1,6 +1,8 @@
 const Policy = () => {
   return (
-    <div>Policy</div>
+    <main>
+      <h2 className='main-title'>Policy</h2>
+    </main>
   )
 }
 

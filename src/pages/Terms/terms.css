@@ -1,0 +1,9 @@
+@import '/src/assets/constants.css';
+
+@media screen and (orientation: portrait) {
+    .terms-content {
+        background-color: var(--Grey);
+        padding: 20px 20px 40px;
+        border-radius: 15px;
+    }
+}
