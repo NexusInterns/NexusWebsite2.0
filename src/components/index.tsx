@@ -7,6 +7,8 @@ import Course from '../stores/Course';
 
 import CoursePreview from './CoursePreview/CoursePreview';
 
+import FAQSCard from "./FAQSCard/FAQSCard";
+
 export {
     ListGroup,
     Alert,
@@ -15,5 +17,7 @@ export {
     CourseCard,
     Course,
 
-    CoursePreview
+    CoursePreview,
+
+    FAQSCard,
 }

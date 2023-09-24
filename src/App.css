@@ -53,8 +53,7 @@
 
     main {
         width: 100%;
-        padding: 20px var(--side-margin) 80px;
-
+        margin: 160px var(--side-margin) 80px;
         display: flex;
         flex-flow: column wrap;
     }

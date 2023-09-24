@@ -1,0 +1,12 @@
+@import '/src/assets/constants.css';
+
+@media screen and (orientation: portrait) {
+    .faqs-human {
+        display: block;
+        position: fixed;
+        z-index: 0;
+        transform: translateY(40px);
+        left: 13vw;
+        height: 550px;
+    }
+}

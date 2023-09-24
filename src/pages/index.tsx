@@ -1,8 +1,8 @@
 import Home from "./Home";
 import Courses from "./Courses";
-import About from "./About";
-import FAQS from "./FAQS";
-import Terms from "./Terms";
+import About from "./About/About";
+import FAQS from "./FAQS/FAQS";
+import Terms from "./Terms/Terms";
 import Policy from "./Policy";
 
 let pages = [Home, Courses, About, FAQS, Terms, Policy];

@@ -36,7 +36,7 @@ const EffectsContainer = ({children, effects=""}: Props) => {
     });
 
     return (
-        <section  className={`effects-container ${effects}`}>{children}</section>
+        <section className={`effects-container ${effects}`}>{children}</section>
     )
 }
 

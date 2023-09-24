@@ -7,7 +7,7 @@ const Home = () =>
     <main>
       <h2 className='main-title'>Home</h2>
       {coursesList.map((course) => 
-      <EffectsContainer effects='fromLeft'>
+      <EffectsContainer effects='fromLeft' key={course.courseID}>
         <CoursePreview title={course.title} courseID={course.courseID}></CoursePreview>
       </EffectsContainer>)}
     </main>

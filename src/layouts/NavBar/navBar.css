@@ -16,12 +16,12 @@
         text-align: center;
 
         display: flex;
+        position: fixed;
         align-items: center;
         justify-content: center;
         flex-flow: row nowrap;
 
         font-weight: bold;
-        position: sticky;
         top: 0;
         background-color: inherit;
         z-index: 99;
@@ -37,6 +37,7 @@
         align-items: flex-end;
         justify-content: space-between;
         flex-flow: row-reverse nowrap;
+        text-decoration: none;
     }
 
     #nav-line-break {
@@ -79,8 +80,9 @@
         justify-content: space-evenly;
         flex-flow: row nowrap;
 
-        position: absolute;
-        bottom: -84.5vh;
+        position: fixed;
+        bottom: 0px;
+        z-index: 99;
     }
 
     .nav-tab {
@@ -91,10 +93,6 @@
         height: 100%;
 
         transition: background-color 100ms ease-out;
-    }
-
-    .nav-tab:hover {
-        background-color: var(--Grey);
     }
 
     .nav-tab:hover .tab-icon {
