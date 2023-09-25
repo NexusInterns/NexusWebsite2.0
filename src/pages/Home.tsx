@@ -1,15 +1,14 @@
-import { EffectsContainer, CoursePreview } from '../components/index';
-import { coursesList } from '../assets/index.ts';
+import { CoursePreview } from '../components/index';
 
 const Home = () =>
 {
   return (
     <main>
       <h2 className='main-title'>Home</h2>
-      {coursesList.map((course) => 
-      <EffectsContainer effects='fromLeft' key={course.courseID}>
-        <CoursePreview title={course.title} courseID={course.courseID}></CoursePreview>
-      </EffectsContainer>)}
+      <div className='main-content'>
+        <CoursePreview/>
+
+      </div>
     </main>
   );
 }
