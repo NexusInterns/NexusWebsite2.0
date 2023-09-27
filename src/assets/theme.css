@@ -1,0 +1,44 @@
+:root
+{   
+    /* filters */
+    --filter-black: invert(0%) sepia(22%) saturate(86%) hue-rotate(76deg) brightness(88%) contrast(78%);
+    --filter-white: invert(100%) sepia(11%) saturate(828%) hue-rotate(307deg) brightness(116%) contrast(99%);
+    --filter-grey: invert(97%) sepia(1%) saturate(0%) hue-rotate(167deg) brightness(88%) contrast(87%);
+
+    /* color black */
+    --color-black: #1c1c1c;
+	--color-black-rgb: 28,28,28;
+	--color-black-contrast: #ffffff;
+	--color-black-contrast-rgb: 255,255,255;
+	--color-black-shade: #191919;
+	--color-black-tint: #333333;
+
+    /* color white */
+    --color-white: #fefefe;
+	--color-white-rgb: 254,254,254;
+	--color-white-contrast: #000000;
+	--color-white-contrast-rgb: 0,0,0;
+	--color-white-shade: #e0e0e0;
+	--color-white-tint: #fefefe;
+
+    /* color grey */
+    --color-grey: #cecece;
+	--color-grey-rgb: 206,206,206;
+	--color-grey-contrast: #000000;
+	--color-grey-contrast-rgb: 0,0,0;
+	--color-grey-shade: #b5b5b5;
+	--color-grey-tint: #d3d3d3;
+
+    /* Themes */
+    --theme-primary: var(--color-white);
+    --theme-primary-light: var(--color-white-tint);
+    --theme-primary-dark: var(--color-white-shade);
+
+    --theme-secondary: var(--color-black);
+    --theme-secondary-light: var(--color-black-tint);
+    --theme-secondary-dark: var(--color-black-shade);
+
+    --theme-tertiary: var(--color-grey);
+    --theme-tertiary-light: var(--color-grey-tint);
+    --theme-tertiary-dark: var(--color-grey-shade);
+}

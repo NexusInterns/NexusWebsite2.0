@@ -1,14 +1,15 @@
-import { ReactNode } from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./faqs-card.css";
 import EffectsContainer from '../Effects/EffectsContainer';
 
 interface Props {
-  defaultActiveKey: number | -1;
+  defaultActiveKey?: number | -1;
   children: {
-    eventKey: number;
-    header: string;
-    body: ReactNode;
+    title: string;
+    informations: {
+      descriptions: string[];
+      outlines: string[];
+    }
   }[];
 }
 
@@ -17,22 +18,26 @@ const FAQSCard = ({ children, defaultActiveKey = -1 }: Props) => {
 
   return (
     <>
-      {children.map(child =>
-      <EffectsContainer key={child.eventKey} effects="fromLeft">
+      {children.map((child, id) =>
+      <EffectsContainer key={id} effects="fromLeft">
         <section className={`faqs-card-item ${
-            activeKey === child.eventKey ? "active" : ""
+            activeKey === id ? "active" : ""
         }`}>
             <button
             className="faqs-card-header"
-            onClick={() => setActiveKey(activeKey === child.eventKey ? defaultActiveKey : child.eventKey)}
+            onClick={() => setActiveKey(activeKey === id ? defaultActiveKey : id)}
             >
-            {child.eventKey}. {child.header}
+            {id+1}. {child.title}
             </button>
             <div
-            id={`faqs-card-${child.eventKey}`}
+            id={`faqs-card-${id}`}
             className={`faqs-card-body `}
             >
-            {child.body}
+              {child.informations.descriptions.map((description, id) => <p key={id}>{description}</p>)}
+              <ul>
+                {child.informations.outlines.map((outline, id) => <li key={id}>{outline}</li>)}
+              </ul>
+              
             </div>
         </section>
       </EffectsContainer>

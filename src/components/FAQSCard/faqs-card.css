@@ -5,6 +5,7 @@
     .faqs-card-item {
         margin: 10px 0;
         border-radius: 15px;
+        width: 100%;
     }
 
     .faqs-card-header {
@@ -45,6 +46,6 @@
     .active .faqs-card-body {
         opacity: 100;
         padding: 40px 20px 20px;
-        max-height: 200px;
+        max-height: max-content;
     }
 }

@@ -12,4 +12,12 @@
     --Filter-Grey: invert(88%) sepia(17%) saturate(5%) hue-rotate(319deg) brightness(90%) contrast(95%);
     
     --side-margin: 30px;
+
+    /* font-size */
+    --font-size-1: 1em;
+    --font-size-2: 0.9em;
+    --font-size-3: 0.8em;
+    --font-size-4: 0.7em;
+    --font-size-5: 0.6em;
+    --font-size-6: 0.5em;
 }

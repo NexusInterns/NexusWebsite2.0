@@ -1,0 +1,44 @@
+[
+    {
+        "title" : "Enroll to any individual course.",
+        "informations" : {
+            "descriptions" : [],
+            "outlines" : []
+        }
+    },
+    {
+        "title" : "Attend the training.",
+        "informations" : {
+            "descriptions" : ["Attend the training we have multiple schedule batch to attend", "Usually our schedule for Zoom Meeting is from 7am to 3pm every weekend"],
+            "outlines" : []
+        }
+    },
+    {
+        "title" : "Perform all the exercises.",
+        "informations" : {
+            "descriptions" : ["There will be multiple steps in the actual practical training"],
+            "outlines" : ["Theoretical where the training will first explain the fundamentals of the subjects", "The trainer will explain the use case or application of the concepts", "The trainer will demonstrate on how to configure the project", "Student will perform the projects, hands-on labs or exercises. thru exercises the student will learn by actually doing the labs", "Troubleshooting: there will be errors, mistakes & misconfigurations.  this is how student learn.", "Student will interact with the trainer to ask what's wrong and do troubleshooting", "The trainer will explain what went wrong and will show the student how to fix it.", "The student will learn his/her mistakes from his/her own experience."]
+        }
+    },
+    {
+        "title" : "Perform the take-home laboratory.",
+        "informations" : {
+            "descriptions" : ["once you understand the topic, you can perform this at the comfort of your own home. We will give you servers where you can remotely install, configure & manage the projects or simulators to practice the exercises so you will become a well experienced IT engineer"],
+            "outlines" : []
+        }
+    },
+    {
+        "title" : "Review.",
+        "informations" : {
+            "descriptions" : ["An actual reviewers will be given to you to read, master,  simulate & solve"],
+            "outlines" : []
+        }
+    },
+    {
+        "title" : "Schedule a test.",
+        "informations" : {
+            "descriptions" : ["Once you are ready or feel confident that you can ace the exam. We will book you for an actual examination.", "Exams can be taken onsite or from your home. You just tell us the date of your preferred exam."],
+            "outlines" : []
+        }
+    }
+]

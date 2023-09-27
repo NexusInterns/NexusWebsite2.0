@@ -1,35 +1,36 @@
 // 'use client';
 import { Link } from "react-router-dom";
 import "./course-card.css";
+import { coursePages } from "../../pages";
 
 interface Props
 {
-    title0: string;
-    title1: string;
-    title2: string;
-    courseID: string;
-    info: string;
-    fee: string;
-    duration: number;
+    id: number;
+    content: {
+        title: string[];
+        key: string;
+        info: string;
+        fee: string;
+        duration: string;
+    }
 }
 
-const CourseCard = ({title0, title1, title2, courseID, info, fee, duration} : Props) => {
+const CourseCard = ({content, id} : Props) => {
     return (
         <Link
-          key={courseID}
-          id={`course-card-${courseID}`}
+          id={`course-card-${content.key}`}
           className="course-card-container"
-          to={`/`}>
+          to={`${coursePages[id].paths[0]}`}>
             <div className="course-card-title">
-                <h2 className="course-card-title-0">{title0}</h2>
-                <h2 className="course-card-title-1">{title1}</h2>
-                <h2 className="course-card-title-2">{title2}</h2>
+                <h2 className="course-card-title-0">{content.title[0]}</h2>
+                <h2 className="course-card-title-1">{content.title[1]}</h2>
+                <h2 className="course-card-title-2">{content.title[2] ? content.title[2] : content.key}</h2>
             </div>
-            <p className="course-card-info">{info}</p>
+            <p className="course-card-info">{content.info}</p>
             <i className="course-card-text">Course Fee</i>
-            <p className="course-card-fee">{fee}</p>
+            <p className="course-card-fee">{content.fee}</p>
             <i className="course-card-text">Course Duration</i>
-            <p className="course-card-duration">{duration}</p>
+            <p className="course-card-duration">{content.duration}</p>
             <div className="course-card-btn">Read More</div>
             <img className="course-card-human" src="./src/assets/icons/course-card-human.svg" alt="" />
         </Link>

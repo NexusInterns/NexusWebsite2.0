@@ -1,0 +1,40 @@
+[
+{
+    "title" : ["Cisco Certified", "Network Associate"],
+    "key" : "CCNA 200-301",
+    "show_key" : true,
+    "info" : "Cisco certification is the edge you need to jump-start your IT career",
+    "descriptions" : ["The Implementing and Administering Cisco Solutions (CCNA) v1.0 course gives you a broad range of fundamental knowledge for all IT careers. Through a combination of lecture, hands-on labs, and self-study, you will learn how to install, operate, configure, and verify basic IPv4 and IPv6 networks. The course covers configuring network components such as switches, routers, and wireless LAN controllers; managing network devices; and identifying basic security threats. The course also gives you a foundation in network programmability, automation, and software-defined networking.", "This course helps you prepare to take the 200-301 Cisco® Certified Network Associate (CCNA®) exam. By passing this one exam, you earn CCNA certification."],
+    "opportunities" : ["Network Analyst", "Network Support Technician", "Entry level network Engineer", "Helpdesk Technician", "Network Administrator", "Level 1 or 2 Server Engineer"],
+    "expectations" : {
+        "description" : "The 200-301 CCNA exam certifies your knowledge and skills related to network fundamentals, network access, IP connectivity, IP services, security fundamentals, and automation and programmability.",
+        "objectives" : ["Identify the components of a computer network and describe their basic characteristics", "Understand the model of host-to-host communication", "Describe the features and functions of the Cisco Internetwork Operating System (IOS®) software", "Describe LANs and the role of switches within LANs", "Describe Ethernet as the network access layer of TCP/IP and describe the operation of switches", "Install a switch and perform the initial configuration", "Describe the TCP/IP Internet layer, IPv4, its addressing scheme, and subnetting", "Describe the TCP/IP Transport layer and Application layer", "Explore functions of routing", "Implement basic configuration on a Cisco router", "Explain host-to-host communications across switches and routers", "Identify and resolve common switched network issues and common problems", "Describe IPv6 main features and addresses", "Describe the operation, benefits, and limitations of static routing", "Describe, implement, and verify Virtual Local Area Networks (VLANs)", "Describe the application and configuration of inter-VLAN routing", "Explain the basics of dynamic routing protocols", "Describe components of Open Shortest Path First (OSPF)", "Explain how Spanning Tree Protocol (STP) works", "Explain how Rapid Spanning Tree Protocol (RSTP) works", "Configure link aggregation using EtherChannel", "Describe the purpose of Layer 3 redundancy protocols", "Describe basic WAN and VPN concepts", "Describe the operation of Access Control Lists (ACLs)", "Configure Dynamic Host Configuration Protocol (DHCP) clients", "Configure Network Address Translation (NAT) on Cisco routers", "Describe basic Quality of Service (QoS) concepts", "Describe the concepts of wireless networks", "Describe how to use Wireless LAN Controllers (WLCs)", "Describe network and device architectures and introduce virtualization", "Introduce the concept of network programmability", "Introduce Software-Defined Networking (SDN)", "Describe smart network management solutions such as Cisco DNA Center™", "Describe Software-Defined Access (SD-Access)", "Describe Software-Defined Wide Area Network (SD-WAN)", "Configure basic IOS system monitoring tools", "Describe the management of Cisco devices"]
+    },
+    "outline" : ["IPv4 Addressing", "Subnetting", "VLSM", "Route Summary", "IPv6", "Cablings", "CLI", "Switch Config", "VLANs", "VTP & Inter-VLAN", "STP", "EtherChannel", "CDP", "Configuring a Cisco Router", "Static Routing", "OSPF", "DHCP", "NAT", "NTP", "Security", "ACL"],
+    "fee" : "FREE for Out-of-School Youth",
+    "certificate_fee" : "AU$561",
+    "duration" : "5 Days",
+    "deliveries" : ["Classroom face to face", "Online or virtual"],
+    "prereqs" : ["No formal prerequisites but enthusiam in learning inter-networking"],
+    "validity" : "3 years"
+},
+{
+    "title" : ["Windows Server 2019", "ADMINISTRATION AUTOMATION", "using Powershell"],
+    "key" : "WSA2019",
+    "show_key" : false,
+    "info" : "You will learn how to automate manual server administration tasks using powershell",
+    "descriptions" : ["BECOME AN IT SUPPORT ENGINEER by Learning Windows Server 2019 System Administration & Automation using Powershell", "Automation is the king in the world of IT operations today.", "There are so many great scripting and other platforms that allow operations to efficiently automate much of the infrastructure and network. With Windows Server, PowerShell is certainly a great way to perform any kind of automation. There are many different kinds of package management systems available by means of PowerShell to install, update, manage, and remove packages. With Windows Server 2019, this is no exception. Using PowerShell package management administrators have a great way to automate Windows Server"],
+    "opportunities" : ["Level 3 Support Engineer", "Server Administrator", "Server Support Specialist", "Server Automation Engineer", "Helpdesk", "End-user Support"],
+    "expectations" : {
+        "description" : "You will learn how to administer Windows Server 2019 operating system which is used in a day to day tasks in an enterprise environment.",
+        "objectives" : []
+    },
+    "outline" : ["Server Deployment in Hyper-V", "Active Directory Administration", "User creation using Powershell", "Active Directory Maintenance", "File Server setup using DFS", "Introduction to Group Policy", "Advanced GPO Folder Redirection", "FSRM Quota Management", "DHCP Implementation", "Advanced DHCP Failover", "Troubleshooting DHCP", "Secondary DNS Implementation", "Replication of secondary DNS", "Troubleshooting DNS"],
+    "fee" : "FREE for Out-of-School Youth",
+    "certificate_fee" : "No Exam required",
+    "duration" : "1 Day",
+    "deliveries" : ["via Zoom meeting"],
+    "prereqs" : ["None as long as you know how to navigate any Windows operating system"],
+    "validity" : "You will receive Certificate of Achievement"
+}
+]
