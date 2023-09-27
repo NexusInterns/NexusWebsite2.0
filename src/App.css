@@ -1,4 +1,7 @@
 @import './assets/constants.css';
+@import './assets/theme.css';
+
+/* body {position: ab; overflow-y: scroll;} */
 
 .list-group-item
 {
@@ -9,7 +12,7 @@
 {
     width: 99.99%;
     min-width: 380px;
-    font-family: Helvetica, Avenir, Arial, sans-serif;
+    font-family: Product Sans, Helvetica, Avenir, Arial, sans-serif;
     background-color: var(--mainBgColor);
     color: var(--Black);
 
@@ -20,6 +23,7 @@
     align-content: flex-start;
     z-index: 0;
     overflow-x: hidden;
+    position: absolute;
 }
 
 header
@@ -46,6 +50,13 @@ main
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
+}
+
+.text-unselectable {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 
@@ -92,5 +103,22 @@ main
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+    }
+
+    .button {
+        width: max-content;
+        background-color: var(--Black);
+        font-weight: bold;
+        padding: 2px 20px;
+        color: var(--White);
+        border: none;
+        border-radius: 6px;
+
+        transition: all 100ms ease-in;
+    }
+
+    .button:active {
+        background-color: var(--White);
+        color: var(--Black);
     }
 }

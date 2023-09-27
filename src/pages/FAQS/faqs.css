@@ -1,5 +1,3 @@
-@import '/src/assets/constants.css';
-
 @media screen and (orientation: portrait) {
     .faqs-human {
         display: block;

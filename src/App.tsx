@@ -1,30 +1,17 @@
-// import * as Components from './components/index.tsx';
-// import axios from 'axios'; 
 import { BrowserRouter as Router, Route, Routes as Switch } from 'react-router-dom';
 import NavBar from "./layouts/NavBar/NavBar.tsx";
-import * as Pages from './pages/index.tsx';
-import { useEffect } from 'react';
-
-var isPortrait: boolean | null = null;
+import pages from './pages/index.tsx';
+import ScrollToTop from './components/ScrollToTop.tsx';
 
 function App()
 {
-  const handleResize = (event: any) => {
-    if (isPortrait === window.innerHeight > window.innerWidth) return;
-    isPortrait = window.innerHeight > window.innerWidth;
-    location.reload();
-  };
-  useEffect(() => {  
-    window.screen.orientation.addEventListener('change', handleResize);
-    return () => window.screen.orientation.removeEventListener('change', handleResize);
-  }, []);
-
   return (
     <>
       <Router>
           <NavBar />
+          <ScrollToTop/>
           <Switch>
-              {Pages.orientationSettings.navPages.map((navPage) => <Route key={navPage.name} path={`/${(navPage.name != Pages.Home.name ? navPage.name : "")}`} Component={navPage}/>)}
+            {pages.map((page) => page.paths.map(path => <Route key={page.name} path={`/${path}`} Component={page.component}/>))}
           </Switch>
       </Router>
     </>

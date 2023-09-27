@@ -1,0 +1,33 @@
+@media screen and (orientation: portrait) {
+    .main-content {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-bottom: 50px;
+        align-items: flex-start;
+        justify-content: start;
+    }
+
+    .course-page-section {
+        width: 100%;
+    }
+
+    .course-page-section-title {
+        font-weight: bold;
+    }
+
+    .course-page-enroll {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    .course-page-back {
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 20px !important;
+        margin-right: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

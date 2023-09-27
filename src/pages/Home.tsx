@@ -7,7 +7,6 @@ const Home = () =>
       <h2 className='main-title'>Home</h2>
       <div className='main-content'>
         <CoursePreview/>
-
       </div>
     </main>
   );
