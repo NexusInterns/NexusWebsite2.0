@@ -1,0 +1,10 @@
+@media screen and (orientation: landscape) {
+    .main-content {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        
+    }
+}

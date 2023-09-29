@@ -7,6 +7,73 @@
     box-shadow: 4px 0px 10px 0px var(--Shadow);
 }
 
+.nav-title {
+    cursor: pointer;
+}
+
+.nav-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc((100% - 30px) / 4);
+    height: 100%;
+
+    transition: all 100ms ease-out;
+}
+
+@media screen and (orientation: landscape) {
+    header{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        background-color: var(--color-black);
+        color: var(--color-white);
+    }
+
+    .nav-title {
+        width: 550px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 50px;
+
+    }
+
+    .nav-name {
+        width: 370px;
+        font-weight: bold;
+    }
+
+    .nav-icon {
+        filter: var(--Filter-Grey);
+        width: var(--main-icon-size);
+    }
+
+    nav {
+        width: 40%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav-tab:hover {
+        background-color: var(--color-black-tint);
+    }
+
+    .tab-title {
+        font-weight: bold;
+        font-size: 25px;
+        transition: all 100ms ease-out;
+    }
+
+    .selected .tab-title {
+        text-decoration-line: underline;
+    }
+}
+
 @media screen and (orientation: portrait) {
     header
     {
@@ -83,16 +150,6 @@
         z-index: 99;
     }
 
-    .nav-tab {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: calc((100% - 30px) / 5);
-        height: 100%;
-
-        transition: background-color 100ms ease-out;
-    }
-
     .nav-tab:hover .tab-icon {
         filter: none;
     }
@@ -107,7 +164,6 @@
         filter: none;
         content: ".";
         color: black;
-
     }
 
     .selected::before {

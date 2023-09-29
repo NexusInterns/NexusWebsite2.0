@@ -41,9 +41,9 @@ const NavBar = () => {
       }}>
         <img className="nav-icon" src={logo} alt="" />
         <h1 className="nav-name">NEXUSCLOUD IT SOLUTIONS</h1>
-        <div id="nav-line-break" style={{width: `${scrollLength}%`}}></div>
+        <div id="nav-line-break" style={{width: `${scrollLength}% no-landscape`}}></div>
       </div>
-      <nav className={`${scrollLength === 100 ? "" : "shadow-header"}`}>
+      <nav className={`${scrollLength !== 100 && window.scrollY > window.scrollX ? "shadow-header" : ""}`}>
         {navPages.map((navPage) => (
           <Link
             key={navPage.name}

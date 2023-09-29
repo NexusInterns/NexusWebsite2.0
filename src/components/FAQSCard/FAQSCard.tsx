@@ -19,8 +19,7 @@ const FAQSCard = ({ children, defaultActiveKey = -1 }: Props) => {
   return (
     <>
       {children.map((child, id) =>
-      <EffectsContainer key={id} effects="fromLeft">
-        <section className={`faqs-card-item ${
+        <section key={id} className={`faqs-card-item ${
             activeKey === id ? "active" : ""
         }`}>
             <button
@@ -40,7 +39,6 @@ const FAQSCard = ({ children, defaultActiveKey = -1 }: Props) => {
               
             </div>
         </section>
-      </EffectsContainer>
       )}
     </>
   );

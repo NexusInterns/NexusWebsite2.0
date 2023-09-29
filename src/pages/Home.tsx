@@ -4,7 +4,7 @@ const Home = () =>
 {
   return (
     <main>
-      <h2 className='main-title'>Home</h2>
+      <h2 className='main-title no-landscape'>Home</h2>
       <div className='main-content'>
         <CoursePreview/>
       </div>

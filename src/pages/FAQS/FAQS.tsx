@@ -6,7 +6,7 @@ const FAQS = () => {
   return (
     <main>
       <h2 className='main-title'>FAQS: How to Start your career in IT?</h2>
-      <img className="faqs-human" src="./src/assets/icons/faqs-human.svg" alt="" />
+      <img className="faqs-human no-landscape" src="./src/assets/icons/faqs-human.svg" alt="" />
       <FAQSCard children={FAQSData}/>
     </main>
   )
