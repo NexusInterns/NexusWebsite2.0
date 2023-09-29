@@ -8,7 +8,7 @@ const About = () => {
         <p>Address: Suite 1414 14th Floor AIC Burgundy Empire Tower, ADB Avenue Ortigas Center, Pasig City. Philippines</p>
         <p>email: kdoz@live.com</p>
         <p>Phone: (+63) 965-277-5629</p>
-        <img className="about-human" src="./src/assets/icons/about-human.svg" alt="" />
+        <img className="about-human no-landscape" src="./src/assets/icons/about-human.svg" alt="" />
       </section>
     </main>
   )

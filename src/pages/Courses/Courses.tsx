@@ -1,6 +1,7 @@
 
 import { CourseCard } from '../../components/index.tsx';
 import { CoursesData } from "../../server/data";
+import './course.css';
 
 const Courses = () =>
 {

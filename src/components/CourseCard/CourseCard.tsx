@@ -21,6 +21,7 @@ const CourseCard = ({content, id} : Props) => {
           id={`course-card-${content.key}`}
           className="course-card-container"
           to={`${coursePages[id].paths[0]}`}>
+            <img className="course-card-img no-portrait" src={`./src/assets/courses/${content.key}.webp`} alt="" />
             <div className="course-card-title">
                 <h2 className="course-card-title-0">{content.title[0]}</h2>
                 <h2 className="course-card-title-1">{content.title[1]}</h2>
@@ -32,7 +33,7 @@ const CourseCard = ({content, id} : Props) => {
             <i className="course-card-text">Course Duration</i>
             <p className="course-card-duration">{content.duration}</p>
             <div className="course-card-btn">Read More</div>
-            <img className="course-card-human" src="./src/assets/icons/course-card-human.svg" alt="" />
+            <img className="course-card-human no-landscape" src="./src/assets/icons/course-card-human.svg" alt="" />
         </Link>
     )
 }
