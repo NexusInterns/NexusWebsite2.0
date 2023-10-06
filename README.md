@@ -1,6 +1,5 @@
-# NexusWebsite2.0
+# NexusWebsite2.0 (Intern-made Nexus IT Solution website design.)
 NexusWebsite Official Website: Original Website: https://www.nexuscloud-its.com
-Intern-made Nexus IT Solution website design.
 
 
 Please do not commit and push directly to the live branch.
